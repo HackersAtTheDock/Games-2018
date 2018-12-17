@@ -1,26 +1,31 @@
 <html>
+
 <head>
   <title>
     Guessing Game
   </title>
   <script src="./GuessGame.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 </head>
 
 <body onload="Init()">
-  <center>
+  <div class="wrapper">
+
+    <center>
       <div class="container">
-        <h1 class="display-4>"Guessing Game</h1>
-        <p class="lead">Try to guess the correct bumner with the least attempts possible.</p>
-        <form name="FGame">
+        <h1 class="display-4>" Guessing Game</h1> <p class="lead">Try to guess the correct bumner with the least
+          attempts possible.</p>
+          <form name="FGame">
             <input type="txt" name="Output" value="" Size="70" disabled><br><br>
-            <input type="txt" name="Input" value= "" Size="20">
+            <input type="txt" name="Input" value="" Size="20">
 
             The number is.........
             <input type="txt" name="HighLow" value="" Size="20" disabled>
 
             You guessed.........
-            <input type="txt" name="Tries" value="0" size ="3" disabled> Times.<br><br>
+            <input type="txt" name="Tries" value="0" size="3" disabled> Times.<br><br>
 
             <div>Enter Guess on Keypad.</div>
             <button type="button" class="btn btn-success" name="one" OnClick="FGame.Input.value += 1">1</button>
@@ -36,13 +41,16 @@
             <button type="button" class="btn btn-info" name="nine" OnClick="FGame.Input.value += 9">9</button>
             <br>
             <button type="button" class="btn btn-warning" name="zero" OnClick="FGame.Input.value += 0">0</button>
-            <button type="button" class="btn btn-danger" name="DoIt" value="Try It!" OnClick="Game(FGame.Input.value);FGame.input.value=''"> Guess! </button>
+            <button type="button" class="btn btn-danger" name="DoIt" value="Try It!" OnClick="Game(FGame.Input.value);FGame.input.value=''">
+              Guess! </button>
             <br>
             <button type="button" class="btn btn-primary" name="init" value="Start/Restart" OnClick="Init()">Start/Restart</button>
-        </form>
+          </form>
 
-    </div>
-  </center>
+      </div>
+    </center>
+  </div>
+
 </body>
 
 </html>
