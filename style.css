@@ -39,3 +39,7 @@ html, body {
   .footer {
       grid-column: 1 / -1
   }
+
+  .game {
+      text-align: center
+  }
