@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>My Computer</title>
 
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>My Computer</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="../../style.css" />
+  <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-    <body>
-
+<body>
+  <div class="wrapper">
+    <div class="container with-title is-center header">
+      <p class="title"><a href="../index.html">Accenture CoderDojo</p></a>
+      <p>Seans's Game Showcase - E's & e's</p>
+    </div>
+    <div class="content">
+      <div class = "game">
       <p class="counterP1">
         Player One: <span class="text"></span>
       </p>
@@ -48,11 +56,20 @@
           <td class="cell" id=7></td>
           <td class="cell" id=8></td>
         </tr>
-     </table>
-     <div class="endgame">
-       <div class="text"></div>
-       <button onClick="startGame()">Play "XD"</button>
-     </div>
-     <script src="script.js"></script>
-   </body>
+      </table>
+      <div class="endgame">
+        <div class="text"></div>
+        <button onClick="startGame()">Play "XD"</button>
+      </div>
+    </div>
+    </div>
+    <div class="container with-title is-center header">
+      <p class="title"><a href="../index.html">Accenture CoderDojo</p></a>
+      <p>Seans's Game Showcase</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
-  <title>PONG</title>
- </head>
- <body>
-     <canvas id="stage" width="200" height="400"></canvas>
-	 <p id="playerScore">You: 0</p>
-	 <p id="enemyScore">Enemy: 0</p>
-	 <script src="pong.js"></script>
+	<meta charset="UTF-8">
+	<title>PONG</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="../../style.css" />
+	<link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container with-title is-center header">
+			<p class="title"><a href="../index.html">Accenture CoderDojo</p></a>
+			<p>Alex's Game Showcase</p>
+		</div>
+		<div class="content">
+			<canvas id="stage" width="200" height="400"></canvas>
+			<p id="playerScore">You: 0</p>
+			<p id="enemyScore">Enemy: 0</p>
+			<script src="pong.js"></script>
+		</div>
+		<div class="container with-title is-center footer">
+			<p class="title"><a href="../index.html">Accenture CoderDojo</p></a>
+			<p>
+				<i class="nes-logo"></i>
+				<span>Hackers Game Dev Showcase</span>
+				<i class="nes-logo"></i>
+			</p>
+		</div>
+	</div>
 </body>
+
 </html>
