@@ -1,8 +1,14 @@
-body {
+html, body {
+    height: 100%;
+}
+
+
+.content {
     background-image:    url('./bg1.jpg');
     background-size:     cover;                      
     background-repeat:   no-repeat;
-    background-position: center center;             
+    background-position: center center;
+    grid-column: 1 / -1;
 }
 
 .link-container {
@@ -10,6 +16,22 @@ body {
     padding: 50px;
 }
 
+.header {
+    display: grid;
+    grid-column: 1 / -1;
+}
+
 .link {
     padding: 10px;
 }
+
+
+  .wrapper {
+      height: 100% !important;
+      display: grid !important;
+      grid-template-rows: 100px 1fr 100px; 
+  }
+
+  .footer {
+      grid-column: 1 / -1
+  }
