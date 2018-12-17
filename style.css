@@ -1,0 +1,15 @@
+body {
+    background-image:    url('./bg1.jpg');
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;             
+}
+
+.link-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.link {
+    padding: 10px;
+}
